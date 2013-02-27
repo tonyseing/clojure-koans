@@ -5,10 +5,10 @@
 
 (meditations
   "Functions are often defined before they are used"
-  (= __ (multiply-by-ten 2))
+  (= 20 (multiply-by-ten 2))
 
   "But they can also be defined inline"
-  (= __ ((fn [n] (* __ n)) 2))
+  (= 20 ((fn [n] (* 10 n)) 2))
 
   "Or using even shorter syntax"
   (= __ (#(* 15 %) __))

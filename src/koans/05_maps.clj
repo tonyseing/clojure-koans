@@ -39,12 +39,12 @@
   (= {1 "January" 2 "February"} (assoc {1 "January" } 2 "February"))
 
   "You can also 'remove' an entry"
-  (= {__ __} (dissoc {1 "January" 2 "February"} 2))
+  (= {1 "January"} (dissoc {1 "January" 2 "February"} 2))
 
   "Often you will need to get the keys (which will be in hash order)"
-  (= (list __ __ __)
+  (= (list 2006 2010 2014)
      (sort (keys {2006 "Torino" 2010 "Vancouver" 2014 "Sochi"})))
 
   "Or the values"
-  (= (list "Sochi" "Torino" __)
+  (= (list "Sochi" "Torino" "Vancouver")
      (sort (vals {2006 "Torino" 2010 "Vancouver" 2014 "Sochi"}))))
