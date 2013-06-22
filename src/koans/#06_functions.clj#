@@ -26,4 +26,4 @@
          (fn [n] (* n n)) 5))
 
   "But they are often better written using the names of functions"
-  (= 25 (function [val lamda]   square)))
+  (= 25 ( square 5)))
