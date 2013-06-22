@@ -19,11 +19,11 @@
   "One function can beget another"
   (= 9 ((fn []
            ((fn [a b] (+ a b))
-            4 5)))
+            4 5))))
 
-  "Higher-order functions take function arguments")
+  "Higher-order functions take function argument"
   (= 25 (
-         (fn [n] (* n n))))
+         (fn [n] (* n n)) 5))
 
   "But they are often better written using the names of functions"
-  (= 25 (function [val lamda] 5 square)))
+  (= 25 (function [val lamda]   square)))
