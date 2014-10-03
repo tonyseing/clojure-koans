@@ -18,10 +18,11 @@
 
 
 (defn factorial [n]
-  (case n
-    0 1
-    1 1
-    (* n (- n 1))))
+  (loop [current n accumulator 1]
+    (case current
+      1 accumulator
+      (recur (dec current) (* accumulator current
+                             )))))
 
 (meditations
   "Recursion ends with a base case"
